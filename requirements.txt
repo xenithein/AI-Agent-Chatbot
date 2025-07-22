@@ -1,0 +1,23 @@
+# Core AI and LLM libraries
+langchain-groq==0.3.6
+langchain-openai==0.3.28
+langchain-community==0.3.27
+langchain-core==0.3.70
+langgraph==0.5.4
+
+# Web frameworks
+streamlit>=1.47.0
+fastapi>=0.104.0
+uvicorn>=0.24.0
+
+# Data handling and validation
+pydantic>=2.8.0
+requests>=2.32.0
+
+# Environment and configuration
+python-dotenv>=1.1.0
+
+# Optional: For enhanced functionality
+# tavily-python>=0.3.0  # If using direct Tavily client
+# openai>=1.97.0        # Direct OpenAI client
+# groq>=0.30.0          # Direct Groq client
