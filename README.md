@@ -55,9 +55,9 @@ OPENAI_API_KEY=your_openai_api_key_here
 ```
 
 **Get your API keys:**
-- **Groq**: https://console.groq.com/keys (Free tier available)
-- **Tavily**: https://tavily.com/ (Free tier: 1000 searches/month)
-- **OpenAI**: https://platform.openai.com/api-keys (Pay-per-use)
+- **Groq**: https://console.groq.com/keys
+- **Tavily**: https://tavily.com/
+- **OpenAI**: https://platform.openai.com/api-keys
 
 ### 4. Run the Application
 
@@ -272,7 +272,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Issues**: Open an issue on GitHub
 - **Discussions**: Use GitHub Discussions for questions
-- **Email**: Contact the maintainer for urgent issues
+- **Email**: Contact gupta.nishant08042004@gmail.com for urgent issues
 
 ## 🔗 Related Links
 
