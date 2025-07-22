@@ -19,14 +19,19 @@ search_tool = TavilySearchResults(max_results=2)
 from langgraph.prebuilt import create_react_agent
 from langchain_core.messages.ai import AIMessage
 
-agent = create_react_agent(
-    model = groq_llm,
-    tools=[search_tool],
-)
+def get_response_from_ai_agent(llm_id, query, allow_search, provider):
+    if provider == "Groq":
+        llm = ChatGroq(model=llm_id, api_key=GROQ_API_KEY)
+    elif provider == "OpenAI":
+        llm = ChatOpenAI(model=llm_id, api_key=OPENAI_API_KEY)
+    tools = [TavilySearchResults(max_results=2)] if allow_search else []
+    agent = create_react_agent(
+        model=groq_llm,
+        tools=tools,
+    )
 
-query = "What is the capital of France?"
-state = {"messages": query}
-response = agent.invoke(state)
-messages = response.get("messages")
-ai_messages = [message.content for message in messages if isinstance(message, AIMessage)]
-print(ai_messages[-1])
+    state = {"messages": query}
+    response = agent.invoke(state)
+    messages = response.get("messages")
+    ai_messages = [message.content for message in messages if isinstance(message, AIMessage)]
+    return ai_messages[-1]
